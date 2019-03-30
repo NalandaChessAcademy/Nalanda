@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>contacts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="js/cform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script>
+$(document).ready(function() {	
+
+	// carufredsel testimonials
+	$('#caroufredsel').carouFredSel({
+		auto: {
+			timeoutDuration: 9000					
+		},
+		responsive: true,		
+		direction:	"left",
+		prev: '.prev_testimonial',
+		next: '.next_testimonial',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo",
+			fx: "fade"
+		},			
+		items: {
+        	width: '1000',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 1
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+		
+
+
+	}); 
+
+
+addHeaderFooter()
+
+/*
+}); //
+$(window).load(function() {
+	//
+*/
+}); //
+</script>
+
+<!-- email sender emailJs -->
+<!--nalanda.kreedaloka-->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_KLn7zhtllBlY9oFbfabe4");
+   })();
+</script>
+			
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="subpage">
+<div id="main">
+
+<div id="header"></div>
+
+<div class="breadcrumbs1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="breadcrumbs1_inner"><a href="index.html"></a></div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span12">
+	
+<h1 class="headings">contact address</h1>
+
+
+<div class="row">
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix map_iframe_div">
+		<figure class=""><iframe class="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8844215622826!2d77.50889424909556!3d12.979243518180501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dd2aab76807%3A0x7121b6d7b4166b92!2sKLE+Society+School!5e0!3m2!1sen!2sin!4v1553791576888" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</figure>
+	</div>
+		<div class="map_address">
+			<h2 class="headings">Nagarabavi</h2>
+			<div class="caption">
+			<p>
+			#65, Anjanadri,<br/>Behind KLE School, <br/> Nagarabavi,<br/> Bangalore.
+			</p>
+				<!--<a href="#" class="button2">read more</a>-->
+			</div>
+		</div>
+	
+</div>
+</div>
+
+
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.219186987821!2d77.50779631482187!3d12.957821690864934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e83fc466a6b%3A0x6cfc4fb9b6763b7a!2sJES+Public+School+-+CBSE+School+in+Nagarabhavi!5e0!3m2!1sen!2sin!4v1553791890405" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</figure>
+		<h2 class="headings">Nagarabavi</h2>
+		<div class="caption">
+		<p>
+		JES PUBLIC SCHOOL,<br/> Nagarabavi,<br/>Bangalore.
+		</p>
+			<!--<a href="#" class="button2">read more</a>-->
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.314287707331!2d77.48972381482173!3d12.95172979086893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ea2b9c9e145%3A0xeffa86b9cee912f!2sEdu-Paedia+Pre-School%2C+Ullal+Branch!5e0!3m2!1sen!2sin!4v1553792167158" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></figure>
+		<h2 class="headings">Ullala</h2>
+		<div class="caption">
+		<p>
+		Edu-Paedia Pre-School,<br/> ullal Branch 15th cross rd,<br/> Railway mens employees layout 1st stage,<br/> jnanajyothinagar railway layout,<br/> Dasarahalli,<br/> Bangalore 560056.
+		</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4677060591557!2d77.61529251482303!3d13.06951789079166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19cfd8b1f9b5%3A0x41bf06413d05268f!2s6th+Cross+Rd%2C+Telecom+Layout%2C+Bengaluru%2C+Karnataka+560064!5e0!3m2!1sen!2sin!4v1553796155692" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></figure>
+		<h2 class="headings">Yelhanka</h2>
+		<div class="caption">
+		<p>
+		#227, 6th cross,<br/> Telicom layout,<br/> Jakkur,<br/> Bangalore.</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.151486485697!2d77.53061451482195!3d12.962156690862091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e76703a46d9%3A0x2bc3fba7e9cdfed!2sRNS+Vidyaniketan!5e0!3m2!1sen!2sin!4v1553792677856" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</figure>
+		<h2 class="headings">Vijayanagara</h2>
+		<div class="caption">
+		<p>
+		Venue1:RNS vidyaniketana,<br/> Bantsangha (only for rns school students),<br/>Bangalore</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62209.12979361807!2d77.5396826868968!3d12.967333374055237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3de07d5a9bdd%3A0xc9539cd086974d64!2sVijayanagar+Club!5e0!3m2!1sen!2sin!4v1553792819228" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</figure>
+		<h2 class="headings">Vijayanagara</h2>
+		<div class="caption">
+		<p>
+		Venue2:vijayanagar club,<br/>  Rpc layout,<br/> Vijayanagar, <br/> Bangalore.</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class="">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.875567226527!2d77.60339964949067!3d12.915718190847862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1502480edec7%3A0x9835b3da7724ab!2s273%2C+6th+Main+Rd%2C+Vysya+Bank+Colony%2C+Stage+2%2C+BTM+2nd+Stage%2C+Bengaluru%2C+Karnataka+560076!5e0!3m2!1sen!2sin!4v1553793729209" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</figure>
+		<h2 class="headings">BTM</h2>
+		<div class="caption">
+		<p>
+		#273, 6Th Main,<br/> BTM 2nd Stage,<br/> Bangalore-560076.</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="span6">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class="">
+<iframe class="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1425153509717!2d75.55793221483275!3d13.950118690219327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbbaf31a23c3c29%3A0x92e40a52d3d2a0e3!2sNalanda+Chess+Academy!5e0!3m2!1sen!2sin!4v1553794075028" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</figure>
+		<h2 class="headings">Shivamogga</h2>
+		<div class="caption">
+		<p>
+		Near Police Chowki,<br/> Vinoba Nagara,<br/> Shivamogga,<br/> Karnataka-577201.</p>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class="">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.884503317651!2d77.50889961482203!3d12.979238290850887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dd2aab76807%3A0x7121b6d7b4166b92!2sKLE+Society+School!5e0!3m2!1sen!2sin!4v1553794230851" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</figure>
+		<h2 class="headings">Nagarabavi</h2>
+		<div class="caption">
+		<p>
+		#65, Anjanadri,<br/>Behind KLE School,<br/> Nagarabavi,<br/> Bangalore.</p>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="line1"></div>
+
+<h2>contact form</h2>
+
+
+<div id="note"></div>
+<div id="fields">
+	<div id="ajax-contact-form" class="form-horizontal"">
+		<div class="row">
+			<div class="span4">
+				<div class="control-group">
+				    <label for="inputName">Your full name:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="contactus_name" name="name">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label for="inputEmail">Your email:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="contactus_email" name="email">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label for="inputPhone">Phone number:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="contactus_phone" name="phone">
+				    </div>
+				</div>
+			</div>
+			<div class="span5">
+				<div class="control-group">
+				    <label for="inputMessage">Message:</label>
+				    <div class="controls">				      				      
+				      <textarea class="span5" id="contactus_message" name="content">Message:</textarea>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="row">
+			<div class="span4">
+				<div class="control-group capthca">
+				    <label class="control-label" for="inputCapthca">Capthca:</label>
+				    <div class="controls">				      
+				      <input class="" type="text" id="inputCapthca" name="capthca" value="Capthca:" onBlur="if(this.value=='') this.value='Capthca:'" onFocus="if(this.value =='Capthca:' ) this.value=''">
+				      <img src="captcha/captcha.php">
+				    </div>
+				</div>
+			</div>
+		</div>-->
+		<button id="sendMessageButton" class="submit" onClick="sendContactUsEmail()">Send Message</button>
+		<div class="text-center">
+          							 
+	</div>
+
+	</div>
+
+</div>
+<!--
+<div class="span3" style="margin-top:10px">
+<h3>Address</h3>
+<p>
+Vijaynagar Club No.1 to 4,<br/>
+1st main 4th cross <br/>
+2nd stage vijayanagar,Hampinanagara,<br/>
+Bengaluru-560104</p>
+
+<h3>Mobile</h3>
+<p>
+99162184433,8748850010<br/>
+vijaynagara club:23300675</p>
+
+
+<h3>E-mail</h3>
+<p>
+ncabangalore@gmail.com</p>
+
+website symbol:www.nalandachess.com<br/>
+fb symbol :@nalandachessacademy
+
+</div>-->
+
+
+<!--
+<div class="span3">
+
+<h2>Why choose us</h2>
+
+	<ul class="ul1">
+	  <li><a href="#">Quisque nullatibulum libero</a></li>
+	  <li><a href="#">Scelerisque eget, malesuada at</a></li>
+	  <li><a href="#">Vivamus eget niiam cursus leo</a></li>
+	  <li><a href="#">Nulla facilisinean nec eros</a></li>
+	  <li><a href="#">Vestibulum ante ipsum</a></li>	  	            		      	      			      
+	</ul>	
+
+	<br>
+	
+<div class="box1">
+<div class="caroufredsel_slider">
+	<div class="txt1">Testimonials</div>
+	<a class="prev_testimonial" href="#"></a>
+	<a class="next_testimonial" href="#"></a>	
+	<ul id="caroufredsel" class="clearfix">
+		<li>
+			<div class="testimonial1">
+				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				<div class="txt2">- Mike Smith, <span>CEO Company</span></div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				<div class="txt2">- Olga Guz, <span>CEO Company</span></div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				<div class="txt2">- Ann Parker, <span>CEO Company</span></div>
+			</div>
+			
+		</li>								
+	</ul>
+</div>
+</div>
+
+<h2>special offer <span>save %50</span></h2>
+
+<p>
+	<strong>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</strong>
+</p>
+<p>
+	Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+</p>
+
+<a href="#" class="button2">read more</a>
+
+
+	
+</div>	-->
+
+</div>	
+</div>	
+</div>
+
+<!--
+<div class="slogan1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="slogan1_inner clearfix">
+<div class="row">
+<div class="span8">
+<div class="block1">
+	<div class="txt1">Nalanda Chess Academy <span>(Affiliated to UKCA)</span></div>
+	<div class="txt2">We Create Kingsand Queens to Conquer the Chess World ...</div>
+</div>	
+</div>
+<div class="span4">
+<div class="block2">
+	 <a href="#" class="button1">request free quote</a>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>-->
+
+<div class="follow1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="follow1_wrapper clearfix">
+<div class="follow1_inner clearfix">
+<div class="block1">follow us and become our fan on</div>	
+<div class="block2"></div>
+<div class="block3">
+<div class="social_wrapper">
+	<ul class="social clearfix">
+	    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic3.png"></a></li>
+	    <li><a href="#"><img src="images/social_ic4.png"></a></li>
+	</ul>
+</div>	
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+
+<div id="footer"></div>
+
+<!--
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot1_inner">
+<div class="row">
+<div class="span3">
+
+	<div class="block_title">information</div>
+
+	<ul class="ul0">
+	  <li><a href="#">Quisque nullatibulum libero</a></li>
+	  <li><a href="#">Scelerisque eget, malesuada at</a></li>
+	                                                                              
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">support</div>
+
+	<ul class="ul0">
+	  <li><a href="#">Lorem ipsum dolor</a></li>
+	  <li><a href="#">Sit amet consectetue</a></li>
+	                                                                                 	  
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">downloads</div>
+
+	<ul class="ul0">
+	  <li><a href="#">Convallis non cursus sed</a></li>
+	  <li><a href="#">Dignissim et est</a></li>
+	  
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">getting started</div>
+
+	<div class="phone1">
+		<div class="txt1">Have Questions? Call Us:</div>
+		<div class="txt2">1 800 123 456</div>
+	</div>
+
+	<ul class="ul0">
+	  <li><a href="#">Our Location</a></li>
+	  <li><a href="#">Find an Agent</a></li>	                                                                                  
+	</ul>
+
+</div>	
+</div>
+	<footer>
+		<div class="copyright"><a href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gridgum.com</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2018. All rights reserved</div>
+	</footer>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+-->	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script> 
+//$(function(){
+ // $("#header").load("header.html"); 
+ // $("#footer").load("footer.html"); 
+//});
+</script> 
+</body>
+</html>
