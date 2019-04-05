@@ -91,20 +91,16 @@ width:200px !important;
 .camera_wrap .camera_pag .camera_pag_ul li { 
     display: none;   
 }
-.thumbnail .caption {
-    /* padding: 9px; */
-    /* color: #555555; */
+
+.gallery_caption .caption{
+   
     display: none;
 }
 
 @media screen and (min-width: 980px) /* Desktop */ {
-  
   .map_iframe_div, .map_address {
   	float:left;
   }
- 
-
-  
 }
 
 @media only screen and (max-width: 768px) /* For mobile phones: */{
