@@ -135,12 +135,12 @@ function createGallery() {
 	var photoCaptionForStany = "";
 	var photoCaptionForKishan = ""
 	/* Images for nalanda */
-	for (i=2; i<=28; i++){
+	for (i=2; i<=21; i++){
 		html+= '<li class="span3 isotope-element isotope-filter1"><div class="thumb-isotope"><div class="thumbnail clearfix"><a href="images/gallery/nalanda/n'+i+'.jpg" height="370px" width="375px">'
 		html+= '<figure><img src="images/gallery/nalanda/n'+i+'.jpg" height="270px" width="275px" alt=""><em></em></figure><div class="caption">'+photoCaptionForNalanda+'</div></a></div></div></li>'
 	}
 	/* Images for stany */
-	for (i=1; i<=10; i++){
+	for (i=1; i<=7; i++){
 		html+= '<li class="span3 isotope-element isotope-filter2"><div class="thumb-isotope"><div class="thumbnail clearfix"><a href="images/gallery/nalanda/s'+i+'.jpg" height="370px" width="375px">'
 		html+= '<figure><img src="images/gallery/stany/s'+i+'.jpg" height="270px" width="275px" alt=""><em></em></figure><div class="caption">'+photoCaptionForStany+'</div></a></div></div></li>'
 	}
