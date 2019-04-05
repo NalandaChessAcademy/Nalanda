@@ -85,12 +85,25 @@ width:200px !important;
 .my-float {
 	margin-top:16px;
 }
+#content{
+	margin-top:50px;
+}
+.camera_wrap .camera_pag .camera_pag_ul li { 
+    display: none;   
+}
+.thumbnail .caption {
+    /* padding: 9px; */
+    /* color: #555555; */
+    display: none;
+}
 
 @media screen and (min-width: 980px) /* Desktop */ {
   
   .map_iframe_div, .map_address {
   	float:left;
   }
+ 
+
   
 }
 
@@ -120,9 +133,7 @@ header{
 .span4, figure > iframe {
 	width:100%;
 }
-#content{
-	margin-top:50px;
-}
+
 
 
 
