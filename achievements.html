@@ -22,6 +22,132 @@
 <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<style>
+	#tcb-testimonial-carousel a{
+        color: @brand-color;
+    }
+    .text-brand{
+        color: black;
+    }
+   
+    .carousel-indicators .active {
+        background: @brand-color;
+    }
+    .no-margin{
+        margin: 0;
+    }
+    .carousel-indicators li {
+        border: 1px solid #ccc;
+    }
+	.carousel-indicators{
+   		 bottom:15px;
+    	 left:550px;
+	}
+	/*
+    .carousel-control {
+        color: @brand-color;
+        width: 5%;
+	}*/
+	.carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 50px;
+    font-weight: 0;
+    line-height: 30px;
+    color: #140e0e;
+    text-align: center;
+    background: #b7e2e4;
+    border: 1px solid #140e0e;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+    .carousel-control:hover,
+    .carousel-control:focus {
+        color: @brand-color;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+    }
+    .item{
+        padding: 15px 40px;
+        background: #f8f8f8;
+    }
+    .media-object {
+        margin: auto;
+    }
+    .achievement_image {
+    	/*width: 50%;*/
+    	float:left;
+    	height:250px;
+    	object-fit: cover;
+    }
+    .achievement_text {
+    	display: inline-block !important;
+    	margin-left: 100px;
+    	width:40%;
+		text-align:justify;
+		line-height:20px;
+		font-family:roboto;
+		font-size:16px;
+		font-weight:bold;
+    }
+    .achievers_parent_div {
+    	padding-left:100px;
+    	padding-right: 100px; 
+	}
+	.section-headline h1{
+    	display: inline-block;
+    	font-size: 40px;
+    	font-weight: 600;
+		margin-bottom: 40px;
+	
+    	position: relative;
+    	text-transform: capitalize;
+		text-align:center;
+	
+    }
+	h1::after {
+		content: "";
+		width: 100px;
+		position: absolute;
+		margin: 0 auto;
+		height: 3px;
+		background: #8fbc54;
+		left: 0;
+		right: 0;
+		bottom: -10px;
+   }
+	/*
+	.well{
+		background-color:#7986cb;
+	}*/
+    @media screen and (max-width: 768px) {
+        .media-object {
+            margin-bottom: 15px;
+        }
+        .achievement_text {
+        	display: block !important;
+        	margin-left: 0px;
+        	width: 100%;
+        }
+        .achievement_image {
+	    	/*width: 50%;*/
+	    	width: 100%;
+	    }
+	    .achievers_parent_div {
+	    	padding:0px;
+	    }
+    }
+</style>
+
 <script>
 $(document).ready(function() {	
 	//	carouFredSel
@@ -69,7 +195,9 @@ $(window).load(function() {
 	/*/
 
 }); //
-</script>		
+</script>	
+
+	
 <!--[if lt IE 8]>
 		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
 	<![endif]-->    
@@ -98,38 +226,66 @@ $(window).load(function() {
 <div id="content">
 <div class="container">
 <div class="row">
-<div class="span9">
-	
-<h1 class="headings">Achievements</h1>
+<div class="span12">
 
-<div class="thumb1">
-	<div class="thumbnail clearfix">
-		<!--<figure class=""><img src="images/about/a1.jpeg" alt=""></figure>-->
 		
-		<div class="caption">
-			<p>
-				Our students participated in various district, state, National and International Level Tournaments every year and we are proud to say that many of them have emerged as Champions. Hundred + counting students are getting international FIDE rating every month from our academy.
-			</p>
-			<!--<a href="#" class="button2">read more</a>-->
-		</div>
-	</div>
+<div class="section-headline" align="center">		
+<h1 class="headings" style="text-align:center;">ACHIEVEMENTS</h1>
+<h3 style="text-align:center">
+		Path towards Grandmastery
+	</h3>
 </div>
 
+<!--
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<div class="caption">
+			<h3 style="text-align:center">
+				Path towards Grandmastery
+			</h3>
+		</div>
+	</div>
+</div>-->
+
+
+<div class="thumb1 well well-lg rounded">
+	<div class="thumbnail clearfix">
+			<div class="span5">
+				<!--<figure class="">-->
+					<img src="images/achievements/achieve.jpg" width="500px" alt="">
+				<!--</figure>-->
+			</div>
+			<div class="span5">
+				<div class="caption" style="text-align:justify;color:black;font-family:roboto;font-size:16px;">
+				<b>We aim to create a global Chess Education system to support the growth of Chess, create an awareness about the game through different modes of outreach programs and  increase the value of educational chess amongst localities. Our students have participated and won many prestigious tournaments in the District, State and National Level Chess Championships. 
+					</b>
+				</div><br/>
+				<div class="caption" style="text-align:justify;color:black;font-family:roboto;font-size:16px;">
+				<b>Every month we have students emerging as Chess Champions with FIDE ratings. Highly acclaimed Chess coaches from Nalanda Academy are seasoned arbiters and invited to evaluate Chess Tournaments conducted across our nation. 
+				Founders of Nalanda Academy are revolutionising Chess Coaching by introducing technology that will accelerate player’s development. 
+			   </b>	
+			    </div>
+			</div>
+		</div>	
+</div>
+
+
+
+
+
 <div class="line1"></div>
 
-<h2>our students</h2>
-
-<p>
-	Three of our students have been conferred the prestigious Ekalavya Award. They are:
-
-<p>
-	 Sriram Sarja (2007), Stany G A (2010) and Yashas.D(2014) 
-</p>
-
-<div class="line1"></div>
 
 
 
+
+
+
+
+
+
+
+<!--
 <div class="row">
 <div class="span3">
 <div class="thumb3">
@@ -143,10 +299,7 @@ $(window).load(function() {
 			</p><p>
 			He represented India for international chess festival in under-15 age category and also represented Bangalore city in Asianchampionship in Lebenon and Philiphines in 2011.
 			</p>
-			<!--<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+			
 		</div>		
 	</div>
 </div>	
@@ -171,10 +324,7 @@ onship in China. He won 4th place in Under-18
 
 international Championship held in Brazil (2011).
 			</p>
-			<!--<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+			
 		</div>		
 	</div>
 </div>	
@@ -197,10 +347,7 @@ India at Turky and he won silver medal, He won
 gold medal in Asian chess championship at China
 in 2010.
 			</p>
-		<!--	<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+		
 		</div>		
 	</div>
 </div>	
@@ -225,10 +372,7 @@ at Spain in 2009 [Expossure trip]. She won several
 Gold medals in SGFI [School games federation of
 India].
 			</p>
-		<!--<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+		
 		</div>		
 	</div>
 </div>	
@@ -244,35 +388,163 @@ India].
 				He represented India for *chess olampaid for visually impared and blinds* at Chennai in 2012 and won Gold medal in the event. He won so many prizes in district, state, national and international level tournaments. He selected in the Indian
 				team for the World cup in 2013 in Spain. Kishan Gangolli (India) has won the Gold Medal at Asian Chess Championship 2017 for Visually Challenged.
 			</p>
-			<!--<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+			
 		</div>		
 	</div>
 </div>	
 </div>	
+</div>-->
+
+
+
+
+
+
+<!--
+<div class="container">-->
+        <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+			
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <div class="clearfix">
+                               <div class="achievers_parent_div span12">
+								   <div>
+                               			<img class="img-responsive media-object achievement_image" src="images/achievements/stany.jpg"> 
+								   </div> 
+								   <div class="achievement_text">
+                                        <h3>1.STANY G A (2010)</h3>
+                                        <p><span class="glyphicon glyphicon-thumbs-up"></span>Grandmaster Stany hails from Shivamogga started playing chess at the age of 8, joined Nalanda Chess Academy in the city where he was trained under Srikrishna Udupa. He made his 3rd and final IM norm in 4th Rethymno International Chess Tournament in Rethymno, Greece from July 7 to 14 2012. Earlier he had won silver medal in under-18 Asian Chess Championship of 2011 held in Philippines and had secured fourth position in Under 18 World Chess Championship held in the same year in Brazil.
+										</p>
+                                    </div>
+                               </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <div class="clearfix">
+                               <div class="achievers_parent_div">
+                               		<img class="img-responsive media-object achievement_image" src="images/achievements/shriram_sarja.jpg"> 
+                               		<div class="achievement_text">
+											<h3>2.SRIRAM SARJA (2007) </h3>
+                                        <p class="achiever_slider"><span class="glyphicon glyphicon-thumbs-up"></span>Ekalavya awardee recipient Sriram Sarja has won many prizes in State level, National level and International levels. He has represented India in the international Chess festival in under-15 age category and also represented Bangalore city in Asian  Championship in Lebanon and the Philippines in 2011. 		 
+										</p>
+                                    </div>
+                               </div>
+                         	</div>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <div class="clearfix">
+                               <div class="achievers_parent_div">
+                               	<img class="img-responsive media-object achievement_image" src="images/achievements/yashasD.jpg"> 
+                               	<div class="achievement_text">
+										<h3>3.YASHAS.D(2014) </h3>
+                                        <p><span class="glyphicon glyphicon-thumbs-up"></span>In the under 16 age category, Yashan has won Gold medal in Commonwealth Championship held in Singapore, 2010. In the sub-junior group he represented India at Turkey and he won silver medal, He won the gold medal in Asian Chess Championship at China in 2010.</p>
+                                        </div>
+                               </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <div class="clearfix">
+                               <div class="achievers_parent_div">
+                               	<img class="img-responsive media-object achievement_image" src="images/achievements/srushti.jpg"> 
+                               	<div class="achievement_text">
+										<!--<p class="text-brand lead no-margin">4.SHRISTI J. SHETTY</p>-->
+										<h3>4.SHRISTI J. SHETTY</h3>
+                                        <p><span class="glyphicon glyphicon-thumbs-up"></span>In the under 14 age category, Shristi has bagged the silver medal in the Commonwealth Championship in 2017. She also represented India in different International tournaments at Spain in 2009 [Exposure trip]. She won several Gold medals in SGFI [School games federation of India]. 	
+										</p>
+                                    </div>
+                               </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <div class="clearfix">
+                               <div class="achievers_parent_div">
+                               		<img class="img-responsive media-object achievement_image" src="images/achievements/kishan.jpg"> 
+                               		<div class="achievement_text">
+                                        <h3>5. KISHAN GANGOLLI</h3>
+                                        <p><span class="glyphicon glyphicon-thumbs-up"></span>The five-time National blind champion, current Asian champion and two-time Olympiad medal winner, Kishan Gangolli is an esteemed student of Nalanda Academy.Credited with a FIDE rating of 1996 (standard), 2042 (rapid) and 2006 (blitz), the Shimoga scholar has represented Karnataka at the National School Games. He is selected in the Indian team for the World Cup in 2013 in Spain. He has won the Gold Medal at Asian Chess Championship 2017 for Visually Challenged.
+										</p>
+                                     </div>
+                               	</div>
+                              
+                           </div>
+                        </div>
+                    </div>
+				</div>
+				
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#tcb-testimonial-carousel" data-slide="prev"> ‹ </a>
+            <a class="right carousel-control" href="#tcb-testimonial-carousel" data-slide="next"> › </a>
+		
+<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#tcb-testimonial-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#tcb-testimonial-carousel" data-slide-to="1"></li>
+				<li data-target="#tcb-testimonial-carousel" data-slide-to="2"></li>
+				<li data-target="#tcb-testimonial-carousel" data-slide-to="3"></li>
+				<li data-target="#tcb-testimonial-carousel" data-slide-to="4"></li>
+			
+			</ol>
+		
+		</div>
+
+		
+		
+  <br/> 
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+<!--
 <div class="span3">
 
 <h2>Others</h2>
-	<!--<ul class="ul1">-->
+	
 	<ul>
 	  <li>Shrishan S</li>
 	  <li>Nisha N Patker</li>
@@ -318,12 +590,30 @@ India].
 	
 
 	
-</div>	
+</div>	-->
+
 </div>	
 </div>	
 </div>
 
-<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="slider4_wrapper">
 <div class="container">
 <div class="row">
@@ -361,7 +651,7 @@ India].
 								</figure>
 								<div class="caption">
 									<div class="txt1">Nisha N Patker</div>
-									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+									<div class="txt2">need 3 line description</div>								
 								</div>								
 							</a>								
 						</div>
@@ -468,7 +758,7 @@ India].
 </div>	
 </div>	
 </div>	
-</div>-->
+</div>
 
 
 <!--

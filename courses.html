@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css" rel="stylesheet"/>
 <script type="text/javascript" src="js/jquery.js"></script>  
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
@@ -61,9 +62,160 @@ $(document).ready(function() {
 <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 <script type="text/javascript">
    (function(){
-      emailjs.init("user_KLn7zhtllBlY9oFbfabe4");
+      emailjs.init("user_oC0ayy9LS80upw7HVW6Zr");
    })();
 </script>
+
+<!-- -->
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#btn_module1 {
+  background-color:#4494a7;
+  
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+}
+#btn_module2 {
+  background-color:#006064;
+  
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+}
+#module1{
+background-color:#4494a7;
+color:white;
+font-size:13px;
+font-weight:bold;
+width:100%;
+text-align: center;
+}
+#module2{
+background-color:#006064;
+color:white;
+font-size:13px;
+font-weight:bold;
+width:100%;
+text-align: center;
+}
+
+
+.strip1 tbody > tr:nth-child(odd) > td {
+	background-color: #2c7388;
+}
+.strip2 tbody > tr:nth-child(odd) > td {
+	background-color: #00838f;
+}
+
+
+.inactive {
+	background-color: #b6c8d4;
+}
+
+label {
+	display: inline;
+	margin-left :300px;
+}
+
+
+
+.form_color{
+color:white;
+
+
+}
+.well{
+	background-color:#ede7f6;
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: justify;
+
+}
+
+
+
+	.feedback{
+		display:none;
+		font-size:13px;
+		color:crimson;
+		font-weight: bold;
+	}
+	#sendmessage{
+		background-color: #1fa6bb; 
+		color: #FFFFFF; 
+		border-radius: 5px;
+		padding:10px;
+		margin:25px;
+		width:50%;
+		text-align:center;
+	}
+	.admission_size{
+		margin-left:60px;
+		width:400px;
+		height:40px;
+	}
+
+	.section-headline h1{
+    	display: inline-block;
+    	font-size: 40px;
+    	font-weight: 600;
+		margin-bottom: 40px;
+	
+    	position: relative;
+    	text-transform: capitalize;
+		text-align:center;
+	
+    }
+	h1::after {
+		content: "";
+		width: 100px;
+		position: absolute;
+		margin: 0 auto;
+		height: 3px;
+		background: #8fbc54;
+		left: 0;
+		right: 0;
+		bottom: -10px;
+   }
+   
+	
+	
+
+
+
+
+@media screen and (max-height: 768px) {
+ /*	.container {
+ 		width: 300px !important;
+ 	}*/
+
+	 .admission_size{
+		 
+		 margin-left:-40px;
+		 width:400px;
+		height:40px;
+	 }
+
+
+
+
+}
+</style>
 
 
 		
@@ -93,96 +245,437 @@ $(document).ready(function() {
 </div>	
 </div>
 
+
+
 <div id="content">
 <div class="container">
-<div class="row">
-<div class="span9">
+<div class="section-headline" align="center">
+	<h1 class="headings">COURSES AND CLASSES </h1>
+	<h3 style="text-align:center">
+		Comprehensive Course for a Chess Player
 	
-<h1 class="headings">Courses and classes </h1>
+	</h3>
+</div>
 
-
-<h1><span>Course details</span></h1>
-
+<!--
 <div class="thumb1">
 	<div class="thumbnail clearfix">
 		
-		
 		<div class="caption">
-			<p>
-				The Comprehensive Course for the Tournament Player 
-   This course has been designed by one of the best and most successful trainers in the country, Mr. Srikrishna udupa exclusively for Nalanda Chess Academy. The course will deliver all the structured material / knowledge / support required for the talented youngsters to succeed in the tournament scene and set them on course to mastery of the game at a very high level.  
-     Based on the training methods which have produced some of the top Indian talents like IM Stany G A, Sri Ram sarja, yashas D, Srusti j shetty,kishan gangolli,  Nisha N Patkar, Shrishan, Anil S Shetty, Spoorthi pai , kedar Umesh vaje, Akshay halagannavar, Aditya B kalyani, Akshatha R  etc 
-</P>
-<p>
-<b>Module 1:</b> 
-Children taking up the game for the first time will be taken for this course. The course includes:
-<ol>
-<li>History and concept of chess game </li>
-<li>Introduction to the chess board </li>
-<li>File, Rank, Diagonal, Name of Squares </li>
-<li>Name of the pieces</li>
-<li> Arrangements of board & pieces</li>
-<li>Movement of pieces</li> 
-<li>Comparitive value of pieces</li> 
-<li>Captures</li>
-<li>Notations</li>
-<li>Castling </li>
-<li>En-Passant rule </li>
-<li>Pawn promotion</li>
-<li>Check & Check mate </li>
-<li>Draw game </li>
-<li>Stale mate</li>
-<li>Reputation of position  </li>
-<li>50 Move rule </li>
-<li>Reading and recording the game </li>
-<li>General principles & Rules of chess game</li>
-<li>Playing practice </li> 
-<li>Mate in one move </li>
-<li>Mate in two moves</li>
-<li>Introduction to play with a chess Timer/clock</li>
-</ol>
+			<h3 style="text-align:center">
+				Comprehensive Course for a Chess Player
+
+			</h3>
+		
+		</div>
+	</div>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="thumb1 well well-lg rounded">
+		<div class="thumbnail clearfix">
+				<div class="span5">
+					<!--<figure class="">-->
+						<img src="images/about/a1.jpeg" width="500px" alt="">
+					<!--</figure>-->
+				</div>
+				<div class="span5">
+					<div class="caption" style="text-align:justify;color:black;font-family:roboto;font-size:16px;">
+							This course has been designed by one of the best and most successful trainers in the
+					country, Mr. Srikrishna Udupa exclusively for Nalanda Chess Academy. The course will
+					deliver all the structured material / knowledge / support required for the talented youngsters
+					to succeed in the tournament environment and set them on course to mastery of the game at
+					a very high level.
+					</div><br/>
+					<div class="caption" style="text-align:justify;color:black;font-family:roboto;font-size:16px;">
+							Based on the training methods which have produced some of the top Indian talents like GM
+					Stany G A, Sri Ram Sarja, Yashas D, Srusti J Shetty, Kishan Gangolli, Nisha N Patkar,
+					Shrishan, Anil S Shetty, Spoorthi Pai, Kedar Umesh Vaje, Akshay Halagannavar, Aditya B
+					Kalyani, Akshatha R etc
+	
+					</div>
+				</div>
+		
+	
+		</div>	
+	</div>
+
+	
+	
+
+
+
+
+
+
+<div class="row" style="width:100%">
+	<div class="span12">
+		<button class="module_button" id = "btn_module1">BEGINNERS</button> &nbsp; &nbsp;
+		<button class="module_button" id = "btn_module2">INTERMEDIATE</button>
+		<br/><br/>
+	</div>	
+</div>
+
+<div class="row">
+<div class="span12">
+<div class="thumb1">
+<div class="thumbnail clearfix">
+
+
+<!--module1 starts-->
+	<div id="module1">
+			<h2 style="color:white">Beginners Batch</h2>
+				<p>
+					Children taking up the game for the first time will be taken for this course.The course includes:
+				</p>	
+				<!--<h2 class="sub-header">Contents</h2>-->
+		
+		<div class="row">				
+		  <div class="col-6">
+			<!--<h2 class="sub-header">Contents</h2>-->
+			<div class="table-responsive">
+			  <table class="table table-striped strip1" align="center">
+				<tbody>
+				  <tr>
+					<td>1</td>
+					<td>History and concept of chess game</td>
+				  </tr>
+				  <tr>
+					<td>2</td>
+					<td>Introduction to the chess board</td>  
+				  </tr>
+				  <tr>
+					<td>3</td>
+					<td>File, Rank, Diagonal, Name of Squares </td>     
+				  </tr>
+				   <tr>
+					<td>4</td>
+					<td>Name of the pieces</td>     
+				  </tr>
+				 <tr>
+					<td>5</td>
+					<td>Arrangements of board & pieces</td>     
+				  </tr>
+				  <tr>
+					<td>6</td>
+					<td>Movement of pieces</td>     
+				  </tr>
+				  <tr>
+					<td>7</td>
+					<td>Comparitive value of pieces</td>     
+				  </tr>
+				 <tr>
+					<td>8</td>
+					<td>Captures</td>     
+				  </tr>
+				  <tr>
+					<td>9</td>
+					<td>Notations</td>     
+				  </tr>
+				  <tr>
+					<td>10</td>
+					<td>Castling </td>     
+				  </tr>
+				 <tr>
+					<td>11</td>
+					<td>En-Passant rule </td>     
+				  </tr>
+				  <tr>
+					<td>12</td>
+					<td>Pawn promotion</td>     
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		  <div class="col-6">
+			<!--<h2 class="sub-header"></h2>-->
+			<div class="table-responsive">
+			  <table class="table table-striped strip1">
+			  
+				<tbody>
+				 <tr>
+					<td>13</td>
+					<td>Check & Check mate</td>     
+				 </tr>
+				 <tr>
+					<td>14</td>
+					<td>Draw game</td>     
+				 </tr>
+				 <tr>
+					<td>15</td>
+					<td>Stale mate</td>     
+				 </tr>
+				   <tr>
+					<td>16</td>
+					<td>Reputation of position  </td>     
+				  </tr>
+				 <tr>
+					<td>17</td>
+					<td>50 Move rule</td>     
+				  </tr>
+				  <tr>
+					<td>18</td>
+					<td>Reading and recording the game</td>     
+				  </tr>
+				   <tr>
+					<td>19</td>
+					<td>General principles & Rules of chess game</td>     
+				  </tr>
+				  <tr>
+					<td>20</td>
+					<td>Playing practice</td>     
+				  </tr>
+				   <tr>
+					<td>21</td>
+					<td>Mate in one move</td>     
+				  </tr>
+				 <tr>
+					<td>22</td>
+					<td>Mate in two moves</td>     
+				  </tr>
+				  <tr>
+					<td>23</td>
+					<td>Introduction to play with a chess Timer/clock</td>     
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+				<p>
+				A beginner batch student will be solving around 200 basic positions. The objective here is Theory /Practice Ratio - 50:50. A student successfully completing this module will be able to play a game of chess independently against an opponent according to FIDE laws of chess and will be eligible for promotion to the next level.
 </p>
-<p>
- A student will be solving around 200 basic positions at this level.  Theory /Practice Ratio - 50:50
-Objective: A child successfully completing this module will be able to play a game of chess independently against an opponent according to FIDE laws of chess and will be eligible for promotion to the next level
-</p>
-<p>
-<b>Module 2 </b>- Advanced Beginners 
- Children successfully completing the foundation course or with a previous knowledge of the basics of the game will be eligible to take this module. It will include:
-</p>
-<ol>
-<li>Introduction to FIDE tournament rules</li>
-<li>General principle of opening </li>
-<li>General principle of endings</li>
-<li>Checkmating with Queen, Rook, Two Bishops, Bishop and Knight</li>
-<li>Tactice in middle game </li>
-<li>Direct hit , hit with check, pin,knight fork, double attack, Discover attack, mill, x-ray attack, skewer,</li>
-<li>Remove the guard </li>
-<li>Deflection</li>
-<li>Decoying</li>
-<li>Blocking</li>
-<li>Back Rank</li>
-<li>In between moves</li>
-<li>Pawn Rolling</li>
-<li>Pawn promotion</li>
-<li>Simultaneous game playing practice </li>
-<li>Blind fold practice</li>
-<li>Introduction to combinations </li>
-<li>Basics of opening development</li>
-<li>Basics of ending (Theory of opposition)</li>
-<li>Tips for practical play </li>
-</ol>
-<p>
-A student will be solving around 500 positions at this level.Theory /Practice Ratio - 40:60 Objective: This course is aimed to prepare a beginner for participation in competitive chess events. Students completing 
-his course are ready to actively participate in age category chess tournaments and move to the next level.
-</p>
+					
+				
+		</div>
+		
+		<!-- module2 starts-->
+		<div id="module2">
+			<h2 style="color:white">Intermediate Batch</h2>
 			
+				<p>
+				<b>Contents </b>- Advanced Beginners 
+				 Children successfully completing the foundation course or with a previous knowledge of the basics of the game will be eligible to take this module. It will include:
+				</p>
+				
+				
+				
+				
+		<div class="row" >				
+		  <div class="col-6">
+			<!--<h2 class="sub-header">Contents</h2>-->
+			<div class="table-responsive strip2" align="center">
+			  <table class="table table-striped">
+			<!--  <thead>
+				<th><h2 class="sub-header">SL NO</h2></th>
+				<th> <h2 class="sub-header">Contents</h2></th>
+			  </thead>-->
+				<tbody>
+				  <tr>
+					<td>1</td>
+					<td>Introduction to FIDE tournament rules</td>
+				  </tr>
+				  
+				  <tr>
+					<td>2</td>
+					<td>General principle of opening</td>
+				  </tr>
+				  
+				  <tr>
+					<td>3</td>
+					<td>General principle of endings</td>
+				  </tr>
+				  <tr>
+						<td>4</td>
+						<td>Checkmating with Queen, Rook, Two Bishops, Bishop and Knight</td>
+					</tr>
+					  
+					<tr>
+						<td>5</td>
+						<td>Tactice in middle game</td>
+					</tr>
+					  
+					<tr>
+						<td>6</td>
+						<td>Direct hit , hit with check, pin,knight fork, double attack, Discover attack, mill, x-ray attack, skewer,</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Remove the guard</td>
+					</tr>
+					  
+					<tr>
+						<td>8</td>
+						<td>Deflection</td>
+					</tr>
+					  
+					<tr>
+						<td>9</td>
+						<td>Decoying</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Blocking</td>
+					</tr>
+					  
+					
+				  
+				 
+				</tbody>
+			  </table>
+			</div>
+				  </div>
+		  <div class="col-6">
+			<!--<h2 class="sub-header"></h2>-->
+			<div class="table-responsive strip2" align="center">
+			  <table class="table table-striped">
+			  
+				<tbody>
+				<tr>
+						<td>11</td>
+						<td>Back Rank</td>
+					</tr>
+					  
+					<tr>
+						<td>12</td>
+						<td>In between moves</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>Pawn Rolling</td>
+					</tr>
+					  
+					<tr>
+						<td>14</td>
+						<td>Pawn promotion</td>
+					</tr>
+					  
+					<tr>
+						<td>15</td>
+						<td>Simultaneous game playing practice</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>Blind fold practice</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>Introduction to combinations</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>Basics of opening development</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>Basics of ending (Theory of opposition)</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>Tips for practical play</td>
+					</tr>
+					  
+					 
+				
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+				
+				<p>
+				An intermediate batch student will be solving around 500 positions at this level. The objective here is Theory /Practice Ratio - 40:60. This course is aimed to prepare a beginner for participation in competitive chess events. Students completing his course are ready to actively participate in age category chess tournaments and move to the advanced level. 
+
+				</p>
+		</div>
+		<!--module2 ends-->
+						
 			<!--<a href="#" class="button2">read more</a>-->
 		</div>
 	</div>
 </div>
 
-<div class="line1"></div>
+
+<!--form-->
+
+
+<div class="span12" style="background-color:#225F89">
+
+<h2 class="form_color" style="text-align:center">Admission Enquiry Form</h2>
+
+
+<div id="sendmessage" style="display:none;" >Our Consultant will help you with your query. 
+</div>
+
+
+	
+		<div class="form-group form_color">
+			<label for="usr" hidden="true" class="form-control"></label>
+			<input placeholder="Please enter First Name" type="text" class="form-control form-control-lg admission_size" id="firstName" style="margin-left:60px;width:400px;height:40px;">
+			<span class="feedback" id="feedback_fname">Please enter valid firstname</span>
+		</div>
+		
+		
+		<div class="form-group form_color">
+		  <label for="pwd" hidden="true"></label>
+		  <input placeholder="Please enter Last Name" type="text" class="form-control form-control-lg admission_size" id="lastName" style="margin-left:60px;width:400px;height:40px;">
+		  <span class="feedback" id="feedback_lname">Please enter valid lastname</span>
+		</div>
+
+		
+	
+		<div class="form-group form_color">
+		  <label for="pwd" hidden="true"></label>
+		  <input placeholder="Please enter Mobile Number" type="text" class="admission_size" style="margin-left:60px;width:400px;height:40px;" id="phone">
+		  <span class="feedback" id="feedback_phone" >Please enter valid mobile number</span>
+		</div>
+		
+		<div class="form-group form_color">
+		  <label for="pwd" hidden="true"></label>
+		  <input placeholder="Please enter Email id" type="text" class="admission_size" id="email" style="margin-left:60px;width:400px;height:40px;">
+		  <span class="feedback" id="feedback_email">Please enter valid email id</span>
+		</div>
+	
+
+		<div class="form-group form_color">
+		  	<label for="pwd" hidden="true"></label>
+		  	<select id="courseLevel" class="admission_size" style="margin-left:60px;width:400px;height:40px;">
+		  		<option value="--">--Select your preferred chess course--</option>
+				<option value="Begginers">Begginers</option>
+			  	<option value="Intermediate">Intermediate</option>
+			  	<option value="Advanced">Advanced</option>
+			</select>
+			<span class="feedback" id="feedback_course">Please choose your course</span>
+		</div>
+		
+		
+		<br/>
+		
+
+
+	<button style="margin-left:470px;height:52px;width:150px;background-color:#24b624;color:white;border-radius:25px;" class="button" type="button" onClick="sendAdmissionEnquiryEmail()"><b>SUBMIT</b></button>
+		<br/><br/>
+</div>
+
+<!--form-->
+
+
+
+
+
 
 <!--
 <h1><span>Class details</span></h1>
@@ -201,43 +694,10 @@ his course are ready to actively participate in age category chess tournaments a
 	</div>
 </div>
 -->
+
+
+
 </div>
-<div class="span3">
-
-<h2>Admission Enquiry Form</h2>
-	<div class="form-group">
-		<label for="usr">First Name:</label>
-			<input type="text" class="form-control" id="firstName">
-		</div>
-		<div class="form-group">
-		  <label for="pwd">Last Name:</label>
-		  <input type="text" class="form-control" id="lastName">
-		</div>
-		
-		<div class="form-group">
-		  <label for="pwd">Phone:</label>
-		  <input type="text" class="form-control" id="phone">
-		</div>
-		
-		<div class="form-group">
-		  <label for="pwd">Email Address:</label>
-		  <input type="text" class="form-control" id="email">
-		</div>
-
-		<div class="form-group">
-		  	<label for="pwd">Select your preferred chess course:</label>
-		  	<select id="courseLevel">
-		  		<option value="--">--Select--</option>
-				<option value="Begginers">Begginers</option>
-			  	<option value="Intermediate">Intermediate</option>
-			  	<option value="Advanced">Advanced</option>
-			</select>
-		</div>
-		<br/>
-		
-		<button type="button" class="btn btn-primary" onClick="sendAdmissionEnquiryEmail()">Submit</button>
-	
-</div>	
 </div>	
 </div>	
 </div>
@@ -247,12 +707,31 @@ his course are ready to actively participate in age category chess tournaments a
 
 
 </div>
+
+
+
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script> 
-//$(function(){
- // $("#header").load("header.html"); 
- // $("#footer").load("footer.html"); 
-//});
-</script> 
+
+<script>
+ window.onload = function() {
+ 	$('#module2').hide()
+ 	$('#btn_module2').addClass('inactive')
+
+ 	$('#btn_module1').click(function(){
+ 		$('#module2').hide()
+ 		$('#module1').show()
+ 		$('#btn_module2').addClass('inactive')
+ 		$('#btn_module1').removeClass('inactive')
+ 	});
+ 	$('#btn_module2').click(function(){
+ 		$('#module2').show()
+ 		$('#module1').hide()
+ 		$('#btn_module1').addClass('inactive')
+ 		$('#btn_module2').removeClass('inactive')
+ 	});
+ }
+
+</script>
+    
 </body>
 </html>

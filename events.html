@@ -62,7 +62,37 @@ $(document).ready(function() {
 	addHeaderFooter()
 });
 
-</script>		
+</script>	
+<style>
+	.section-headline h1{
+    	display: inline-block;
+    	font-size: 40px;
+    	font-weight: 600;
+		margin-bottom: 40px;
+	
+    	position: relative;
+    	text-transform: capitalize;
+		text-align:center;
+	
+    }
+	h1::after {
+		content: "";
+		width: 100px;
+		position: absolute;
+		margin: 0 auto;
+		height: 3px;
+		background: #8fbc54;
+		left: 0;
+		right: 0;
+		bottom: -10px;
+   }
+   .events_text{
+	   font-size:16px;
+	   text-align:justify;
+	   font-style:roboto;
+	   font-weight:700;
+   }
+</style>	
 <!--[if lt IE 8]>
 		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
 	<![endif]-->    
@@ -92,10 +122,17 @@ $(document).ready(function() {
 <div class="container">
 <div class="row">
 <div class="span12">
-	
-<h1 class="headings">Upcoming events<br><!--<span>about our academy</span>--></h1>
 
+<div class="section-headline" align="center">
+	<h1 class="headings" style="text-align:center;">UPCOMING EVENTS<br/></h1>
+	<h3 style="text-align:center">
+			Regularly conducts term and open tournaments for players 
+	</h3>
+</div>
+	
 <div class="row">
+
+<!--
 <div class="span3">
 <div class="thumb3">
 <h3>Summer camp</h3>
@@ -108,23 +145,35 @@ $(document).ready(function() {
 		</div>		
 	</div>
 </div>	
-</div>
-<div class="span3">
+</div>-->
+
+
+<!--<div class="span3">
 <div class="thumb3">
-<h3>Tournaments</h3>
+<h3 style="text-align:center">ChessEra Tournaments</h3>
 	<div class="thumbnail clearfix">		
-		<figure class=""><a href="tournaments.html"><img class="pamphlet_size" src="images/events/tournament/t1.jpg" alt=""></a> </figure>
+		<figure class=""><a href="tournaments.html"><img class="pamphlet_size" src="images/events/tournament/t1.png" alt=""></a> </figure>
 		<div class="caption">
 			
-			<p><a href="tournaments.html"><h3>ONLINE TOURNAMENT</h3></a></p>
-			<!--<p>
-				<strong>Price:</strong> $55
-			</p>
-			<a href="#" class="button2">buy </a>-->
+			<a href="tournaments.html" class="button2">chessera tournament details </a>
 		</div>		
 	</div>
 </div>	
 </div>
+
+<div class="span3">
+		<div class="thumb3">
+		<h3 style="text-align:center">Chess Class</h3>
+			<div class="thumbnail clearfix">		
+				<figure class=""><a href="chess_class.html"><img class="pamphlet_size" src="images/events/chess_class/chess.jpg"  alt=""></a></figure>
+				<div class="caption">	
+					<a href="chess_class.html" class="button2">Nalanda Academy in Bangalore </a>
+						</div>		
+			</div>
+		</div>	
+</div>-->
+
+		
 
 
 
@@ -154,14 +203,129 @@ $(document).ready(function() {
 </div>	
 </div>-->
 
+
+
+
+
+
+
+
+<!--tournament starts-->
+
+<div class="row">
+
+
+	<div class="span4">
+	<div class="thumb1">
+		<div class="thumbnail clearfix">
+			
+			<h2 style="font-size:25px;"><b>Tournaments</b></h2>
+	<p class="events_text">Register to the tournament either through:</p>
+	<h2>Pay Chess Entry</h2>
+	<a class="events_text" href="https://paychessentry.com/events/register?id=5d3e9e58362e709556cef0d3">Click here to register through paychessentry.com</a><br/><br/><br/>
+	<h3>OR</h3>
+	<h2>Download Chess Era App</h2>
+	
+	<ul class="events_text">
+		<li class="drop_list">
+			<a href="https://play.google.com/store/apps/details?id=com.kreedaloka.chessera">Android</a>
+		</li>
+		<li class="drop_list">
+			<a href="https://s3.ap-south-1.amazonaws.com/chessera/WindowsBuild/ChessEra.exe">windows-64bit</a>
+		</li>
+		<li class="drop_list">
+			<a href="https://s3.ap-south-1.amazonaws.com/chessera/WindowsBuild/ChessEra32bit.exe">windows-32bit</a>
+		</li>
+		<li class="drop_list">
+			<a href="https://chessera.s3.ap-south-1.amazonaws.com/MACBuild/ChessEra.zip">Mac</a>
+		</li>
+	</ul>		
+	
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="span4">
+	<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<div class="thumbnail">
+			<figure  class=""><img src="images/events/tournament/t1.jpg"  alt="">
+			</figure>
+		</div>
+	</div>		
+	</div>
+	</div>
+	
+	<div class="span4">
+	<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<div class="thumbnail">
+			<figure  class=""><img src="images/events/tournament/t2.jpg"  alt="">
+			</figure>
+		</div>
+	</div>		
+	</div>
+	</div>
+	
+	</div>
+
+
+	<!--tournament ends-->
+
+
+	<div class="line1"></div>
+
+
+	
+<!--chess class starts-->
+<div class="row">
+
+
+	<div class="span4">
+	<div class="thumb1">
+		<div class="thumbnail clearfix">
+			
+				<h2 style="font-size:25px;"><b>Nalanda Academy in Bangalore</b></h2>
+	<p class="events_text">Spread across various demographics, Nalanda Academy has spread its wings across locations in <b> <a href=""> <a href="contact_us.html#maps">Namma Bengaluru</a> at Nagarabavi and JP Nagar.</b>Other locations in Bengaluru are at  Yelahanka, BTM 2nd Stage and Vijayanagar houses many branches where our esteemed coaches are imparting Chess knowledge to residents of Namma Bengaluru. Regular coaching classes are conducted here with weekdays and weekend batches for beginners and intermediate courses. To join and know more about coaching classes. <a href="courses.html">click here</a>
+	</p>
+	
+	</div>
+	</div>
+	</div>
+	
+	<div class="span4">
+	<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<div class="thumbnail">
+			<figure  class=""><img src="images/events/chess_class/chess1.jpg"  alt="">
+			</figure>
+		</div>
+	</div>		
+		
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<div class="thumbnail">
+			<figure  class=""><img src="images/events/chess_class/chess2.jpg"  alt="">
+			</figure>
+		</div>
+	</div>		
+		
+	</div>
+	</div>
+	
+	
+	
+	
+	</div>
+	
+	<!--chess class ends-->
+
 </div>
-
-
-
-
-
 </div>
-
 </div>	
 </div>	
 </div>

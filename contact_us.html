@@ -62,6 +62,9 @@ $(document).ready(function() {
 	}); 
 
 
+
+
+
 addHeaderFooter()
 
 /*
@@ -70,6 +73,9 @@ $(window).load(function() {
 	//
 */
 }); //
+
+
+
 </script>
 
 <!-- email sender emailJs -->
@@ -77,9 +83,76 @@ $(window).load(function() {
 <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 <script type="text/javascript">
    (function(){
-      emailjs.init("user_KLn7zhtllBlY9oFbfabe4");
+      emailjs.init("user_oC0ayy9LS80upw7HVW6Zr");
    })();
 </script>
+
+<style>
+	.feedback{
+		color:red;
+	}
+	#sendmessage{
+		background-color: #1fa6bb; 
+		color: #FFFFFF; 
+		border-radius: 5px;
+		padding:10px;
+		margin:25px;
+		width:50%;
+		text-align:center;
+	}
+	.contact_details{
+		 margin-left:240px;
+		 font-weight:900;
+		 font-style: roboto;
+		 font-size: 15px;
+		
+	 }
+	 .map_text{
+		font-family:roboto;
+		font-weight:bold;
+		font-size:15px;
+	 }
+	 .section-headline h1{
+    	display: inline-block;
+    	font-size: 40px;
+    	font-weight: 600;
+		margin-bottom: 40px;
+	
+    	position: relative;
+    	text-transform: capitalize;
+		text-align:center;
+	
+    }
+	h1::after {
+		content: "";
+		width: 100px;
+		position: absolute;
+		margin: 0 auto;
+		height: 3px;
+		background: #8fbc54;
+		left: 0;
+		right: 0;
+		bottom: -10px;
+   }
+
+
+		
+@media screen and (max-height: 768px) {
+ /*	.container {
+ 		width: 300px !important;
+ 	}*/
+	 .contact_details{
+		/*margin-left:70px;*/
+		 font-weight: 700;
+		 font-style: roboto;
+		 font-size: 16px;
+	 }
+
+
+	 
+}
+	
+</style>
 			
 <!--[if lt IE 8]>
 		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
@@ -109,80 +182,145 @@ $(window).load(function() {
 <div id="content">
 <div class="container">
 <div class="row">
-<div class="span12">
-<h1 class="headings">CONTACT US</h1>
-
-<h2 class="headings"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp Mobile</h2>
-
-<div><b>Naveen A J: 9916218433,74892019922</b></div>
-<div><b>Srikrishna Udupa: 9844436276</b></div>
-
-
-<h2 class="headings"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp Email</h2>
-<div><b>naveen.aj.nca@gmail.com</b></div>
-
-
-	
-<h2 class="headings"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbspcontact Address</h2>
-
-
-<div class="row">
-<!--
-<div class="span4">
-<div class="thumb1">
-	<div  class="thumbnail clearfix map_iframe_div">
-		<figure style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8844215622826!2d77.50889424909556!3d12.979243518180501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dd2aab76807%3A0x7121b6d7b4166b92!2sKLE+Society+School!5e0!3m2!1sen!2sin!4v1553791576888" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</figure>
-	</div>
-			<h2 class="places">Nagarabavi</h2>
-			<div class="caption">
-			<p>#65, Anjanadri, Behind KLE School,<br/>Nagarabavi, Bangalore
-			</p>
-			</div>		
+<div class="section-headline" align="center">
+<h1 class="headings" style="text-align:center;">CONTACT US</h1>
+<h3 style="text-align:center">
+		Our support team is always available to answer your queries
+</h3>
 </div>
+<!--
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		
+		<div class="caption">
+			<h3 style="text-align:center">
+				Our support team is always available to answer your queries
+
+			</h3>
+		
+		</div>
+	</div>
 </div>-->
 
-<div class="span4">
+
+
+	<div class="span6 ">
+		<h2 class="contact_details" class="headings"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Mobile</h2>
+		<div class="contact_details"><b>Srikrishna Udupa: 9844436276</b></div>
+		<div class="contact_details"><b>Naveen A J: 9916218433,74892019922</b></div>
+		<h2 class="contact_details" class="headings"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Email</h2>
+		<div class="contact_details"><b>naveen.aj.nca@gmail.com</b></div>
+	</div>
+
+	<div class="span6">
+		<!--<h2>contact form</h2>
+		<div id="note"></div>-->
+		<div id="fields">
+				<div id="sendmessage" style="display:none;" >Our Consultant will help you with your query. 
+					</div>
+				
+			<div id="ajax-contact-form" class="form-horizontal">
+					
+				<div class="row">
+					<div class="span6">
+							
+						<div class="control-group">
+							<!--<label for="inputName">Your full name:</label>-->
+							<div class="controls">				      
+							  <input placeholder="Your full name" class="span4" type="text" id="contactus_name" name="name">
+							</div>
+							<span class="feedback" id="feedback_name" style="display: none;">Please enter valid name</span>
+						</div>
+						<div class="control-group">
+							<!--<label for="inputEmail">Your email:</label>-->
+							<div class="controls">				      
+							  <input  placeholder="Your email" class="span4" type="text" id="contactus_email" name="email">
+							</div>
+							<span class="feedback" id="feedback_email" style="display: none;">Please enter valid Email Id</span>
+						
+						</div>
+						<div class="control-group">
+							<!--<label for="inputPhone">Phone number:</label>-->
+							<div class="controls">				      
+							  <input  placeholder="Your phone number"  class="span4" type="text" id="contactus_phone" name="phone">
+							</div>
+							<span class="feedback" id="feedback_phone" style="display: none;">Please enter valid phone number</span>
+						
+						</div>
+					</div>
+					<div class="span5">
+						<div class="control-group">
+						<!--	<label for="inputMessage">Message:</label>-->
+							<div class="controls">				      				      
+							  <textarea class="span4" id="contactus_message" name="content" placeholder="Message"></textarea>
+							</div>
+							<span class="feedback" id="feedback_message" style="display: none;">Please enter message</span>
+						
+						</div>
+					</div>
+				</div>
+				
+				<button id="sendMessageButton" class="submit" onClick="sendContactUsEmail()">Send Message</button>
+				
+				
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<br/><br/>
+
+<div class="span9" id="maps">
+	
+<h2 class="headings" align="center"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Branches</h2>
+
+
+<div class="row" >
+
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
-		<figure style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.219186987821!2d77.50779631482187!3d12.957821690864934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e83fc466a6b%3A0x6cfc4fb9b6763b7a!2sJES+Public+School+-+CBSE+School+in+Nagarabhavi!5e0!3m2!1sen!2sin!4v1553791890405" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-	    </figure>
-		<h2 class="places">Nagarabavi</h2>
+		<figure  style="padding:0px;margin:0px;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1425153509717!2d75.55793221483275!3d13.950118690219327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbbaf31a23c3c29%3A0x92e40a52d3d2a0e3!2sNalanda+Chess+Academy!5e0!3m2!1sen!2sin!4v1553794075028" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</figure> 
+		<h3 class="places" style="font-style: roboto;">Shivamogga</h2>
 		<div class="caption">
-		<p>
-		JES Public School,<br/>Nagarabavi, Bangalore
-		</p>
-			
+		<p class="map_text">Near Police Chowki, Vinoba Nagara,<br/> Shivamogga, Karnataka - 577201</p>
 		</div>
 	</div>
 </div>
-</div>
+</div> 
 
-<div class="span4">
-<div class="thumb1">
-	<div class="thumbnail clearfix">
-		<figure  style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.314287707331!2d77.48972381482173!3d12.95172979086893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ea2b9c9e145%3A0xeffa86b9cee912f!2sEdu-Paedia+Pre-School%2C+Ullal+Branch!5e0!3m2!1sen!2sin!4v1553792167158" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-	    </figure>
-		<h2  class="places">Ullala</h2>
-		<div class="caption">
-		<p>
-		Edu-Paedia Pre-School, Ullal Branch 15th cross rd,<br/> Railway men's employees layout, 1st stage,<br/>Jnanajyothinagar railway layout, Dasarahalli, Bangalore 560056
-		</p>
-			
-		</div>
-	</div>
-</div>
-</div>
-
-<div class="span4">
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
 		<figure style="padding:0px;margin:0px;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.875567226527!2d77.60339964949067!3d12.915718190847862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1502480edec7%3A0x9835b3da7724ab!2s273%2C+6th+Main+Rd%2C+Vysya+Bank+Colony%2C+Stage+2%2C+BTM+2nd+Stage%2C+Bengaluru%2C+Karnataka+560076!5e0!3m2!1sen!2sin!4v1553793729209" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-</figure>
-		<h2 class="places">BTM</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.219186987821!2d77.50779631482187!3d12.957821690864934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e83fc466a6b%3A0x6cfc4fb9b6763b7a!2sJES+Public+School+-+CBSE+School+in+Nagarabhavi!5e0!3m2!1sen!2sin!4v1553791890405" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </figure>
+		<h3 class="places">Nagarabavi</h3>
 		<div class="caption">
-		<p>#273, 6Th Main, BTM 2nd Stage,<br/> Bangalore - 560076</p>
+		<p class="map_text">
+		JES Public School,<br/>Nagarabavi, Bangalore
+		</p>	
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+<div class="span3">
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure style="padding:0px;margin:0px;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0747238155245!2d77.58450771482129!3d12.90291659090096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1514e9a60245%3A0xf4161610a8b4c667!2sSAM%20GURUKUL!5e0!3m2!1sen!2sin!4v1568453809677!5m2!1sen!2sin" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>		
+		</figure>
+		<h3 class="places">JPNagar</h3>
+		<div class="caption">
+		<p class="map_text">Sam Gurukul,22nd Main Road,JP Nagar V Phase,Bangalore.</p>
 		</div>
 	</div>
 </div>
@@ -194,88 +332,62 @@ $(window).load(function() {
 
 
 <div class="row">
-<div class="span4">
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
-		<figure style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4677060591557!2d77.61529251482303!3d13.06951789079166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19cfd8b1f9b5%3A0x41bf06413d05268f!2s6th+Cross+Rd%2C+Telecom+Layout%2C+Bengaluru%2C+Karnataka+560064!5e0!3m2!1sen!2sin!4v1553796155692" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></figure>
-		<h2 class="places">Yelhanka</h2>
+		<figure style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4677060591557!2d77.61529251482303!3d13.06951789079166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19cfd8b1f9b5%3A0x41bf06413d05268f!2s6th+Cross+Rd%2C+Telecom+Layout%2C+Bengaluru%2C+Karnataka+560064!5e0!3m2!1sen!2sin!4v1553796155692" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe></figure>
+		<h3 class="places">Yelhanka</h3>
 		<div class="caption">
-		<p>
+		<p class="map_text">
 		#227, 6th cross,Telicom layout,<br/> Jakkur, Bangalore</p>
 		</div>
 	</div>
 </div>
 </div>
 
-<div class="span4">
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
-		<figure  style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.151486485697!2d77.53061451482195!3d12.962156690862091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e76703a46d9%3A0x2bc3fba7e9cdfed!2sRNS+Vidyaniketan!5e0!3m2!1sen!2sin!4v1553792677856" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<figure  style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.151486485697!2d77.53061451482195!3d12.962156690862091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e76703a46d9%3A0x2bc3fba7e9cdfed!2sRNS+Vidyaniketan!5e0!3m2!1sen!2sin!4v1553792677856" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 </figure>
-		<h2 class="places">Vijayanagara</h2>
+		<h3 class="places">Vijayanagara</h3>
 		<div class="caption">
-		<p>Venue1: RNS Vidyaniketana,<br/> Bantsangha, Bangalore (only for RNS school students)</p>
+		<p class="map_text">Venue1: RNS Vidyaniketana,<br/> Bantsangha, Bangalore (only for RNS school students)</p>
 		</div>
 	</div>
 </div>
 </div>
 
 
-<div class="span4">
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
-		<figure  style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62209.12979361807!2d77.5396826868968!3d12.967333374055237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3de07d5a9bdd%3A0xc9539cd086974d64!2sVijayanagar+Club!5e0!3m2!1sen!2sin!4v1553792819228" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<figure  style="padding:0px;margin:0px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62209.12979361807!2d77.5396826868968!3d12.967333374055237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3de07d5a9bdd%3A0xc9539cd086974d64!2sVijayanagar+Club!5e0!3m2!1sen!2sin!4v1553792819228" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 </figure>
-		<h2 class="places">Vijayanagara</h2>
+		<h3 class="places">Vijayanagara</h3>
 		<div class="caption">
-		<p>Venue2: Vijayanagar club, RPC layout,<br/> Vijayanagar, Bangalore</p>
+		<p class="map_text">Venue2: Vijayanagar club, RPC layout,<br/> Vijayanagar, Bangalore</p>
 		</div>
 	</div>
 </div>
 </div>
 </div>
-
-
-
 
 
 <div class="row">
-
-
-<div class="span4">
-<div class="thumb1">
-	<div class="thumbnail clearfix">
-		<figure  style="padding:0px;margin:0px;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1425153509717!2d75.55793221483275!3d13.950118690219327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbbaf31a23c3c29%3A0x92e40a52d3d2a0e3!2sNalanda+Chess+Academy!5e0!3m2!1sen!2sin!4v1553794075028" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</figure> 
-		<h2 class="places">Shivamogga</h2>
-		<div class="caption">
-		<p>Near Police Chowki, Vinoba Nagara,<br/> Shivamogga, Karnataka - 577201</p>
-		</div>
-	</div>
-</div>
-</div>
-
-
-<!--
-<div class="span4">
+<div class="span3">
 <div class="thumb1">
 	<div class="thumbnail clearfix">
 		<figure style="padding:0px;margin:0px;">
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.884503317651!2d77.50889961482203!3d12.979238290850887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dd2aab76807%3A0x7121b6d7b4166b92!2sKLE+Society+School!5e0!3m2!1sen!2sin!4v1553794230851" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</figure>
-		<h2 class="places">Nagarabavi</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.875567226527!2d77.60339964949067!3d12.915718190847862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1502480edec7%3A0x9835b3da7724ab!2s273%2C+6th+Main+Rd%2C+Vysya+Bank+Colony%2C+Stage+2%2C+BTM+2nd+Stage%2C+Bengaluru%2C+Karnataka+560076!5e0!3m2!1sen!2sin!4v1553793729209" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</figure>
+		<h3 class="places">BTM</h3>
 		<div class="caption">
-		<p>
-		#65, Anjanadri, Behind KLE School,<br/> Nagarabavi, Bangalore.</p>
-			
+		<p class="map_text">#273, 6Th Main, BTM 2nd Stage,<br/> Bangalore - 560076</p>
 		</div>
 	</div>
 </div>
-</div>-->
+</div>
 </div>
 
 
@@ -294,6 +406,12 @@ $(window).load(function() {
 
 
 
+
+
+
+
+
+<!--
 
 <div class="line1"></div>
 
@@ -333,62 +451,21 @@ $(window).load(function() {
 				</div>
 			</div>
 		</div>
-		<!--
-		<div class="row">
-			<div class="span4">
-				<div class="control-group capthca">
-				    <label class="control-label" for="inputCapthca">Capthca:</label>
-				    <div class="controls">				      
-				      <input class="" type="text" id="inputCapthca" name="capthca" value="Capthca:" onBlur="if(this.value=='') this.value='Capthca:'" onFocus="if(this.value =='Capthca:' ) this.value=''">
-				      <img src="captcha/captcha.php">
-				    </div>
-				</div>
-			</div>
-		</div>-->
+		
 		<button id="sendMessageButton" class="submit" onClick="sendContactUsEmail()">Send Message</button>
 		<div class="text-center">
           							 
 	</div>
 
+	</div>-->
+	
 	</div>
-
-
-
-
-<!--
-<div class="follow1">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="follow1_wrapper clearfix">
-<div class="follow1_inner clearfix">
-<div class="block1">follow us and become our fan on</div>	
-<div class="block2"></div>
-<div class="block3">
-<div class="social_wrapper">
-	<ul class="social clearfix">
-	    <li><a href="#"><img src="images/social_ic1.png"></a></li>
-	    <li><a href="#"><img src="images/social_ic2.png"></a></li>
-	    <li><a href="#"><img src="images/social_ic3.png"></a></li>
-	    <li><a href="#"><img src="images/social_ic4.png"></a></li>
-	</ul>
-</div>	
-</div>
-</div>	
-</div>	
-</div>	
-</div>	
-</div>	
-</div>-->
-
-
-
-
-
-</div>
 </div>	
 </div>
 </div>
+
+
+
 <div id="footer"></div>
 </div>
 <script type="text/javascript" src="js/bootstrap.js"></script>

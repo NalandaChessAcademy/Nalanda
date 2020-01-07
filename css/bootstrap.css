@@ -6071,8 +6071,8 @@ a.badge:focus {
 
 .carousel-indicators {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  /*top: 15px;
+  right: 15px;*/
   z-index: 5;
   margin: 0;
   list-style: none;
@@ -6091,7 +6091,7 @@ a.badge:focus {
 }
 
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: #83dad2;
 }
 
 .carousel-caption {
